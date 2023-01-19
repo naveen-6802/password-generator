@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Generator</title>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+	<div id="passwordDiv">
+		<h1 style="margin-bottom:0px;">
+			Generate a<br/>
+			<span id="rndm-pswd">random password</span>
+		</h1>
+		<p id="para">Never use an unconfident password again.</p>
+        <br/>
+		<div class="bAin">
+            <button id="genpswds" onclick="genPswd()">Generate Passwords</button>
+            <input type="text" placeholder="Set password length(8-15)" id="length" />
+        </div>
+        <br/><br/>
+		<div style="display:flex;">
+            <label>Include Numbers &nbsp;</label>
+            <label class="switch">
+                <input type="checkbox" id="incnum" >
+                <span class="slider round"></span>
+            </label>
+		</div>
+        <br/>
+		<div id="line"></div><br/><br/>
+		<div id="pswds">
+			<div class="form">
+                <input type="text" class="pswd1" readonly>
+                <ion-icon name="copy" class="ii1"></ion-icon>
+            </div>
+			<div class="form">
+                <input type="text" class="pswd2" readonly>
+                <ion-icon name="copy" class="ii2"></ion-icon>
+            </div>
+            
+		</div>
+        <br/>
+        <center id="mCm">
+            <div id="cpyMsg"></div>
+        </center>
+		<br/>
+		<script src="index.js"></script>
+	</div>
+</body>
+
+</html>
