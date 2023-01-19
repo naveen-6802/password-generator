@@ -26,16 +26,17 @@ body {
     background: rgb(37,80,250);
     border: 2px solid rgb(37,80,250);
     color:white;
-    padding: 9px 15px;
+    padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     outline: 0;
+    font-size:13px;
 }
 #length {
     background: white;
     border: 2px solid rgb(37,80,250);
     color:black;
-    padding: 9px 15px;
+    padding: 10px;
     border-radius: 6px;
     width: 40%;
     font-size: 13px;
