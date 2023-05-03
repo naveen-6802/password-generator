@@ -14,7 +14,7 @@ for(let i=0; i < characters.length; i++) {
 noNum.splice(noNum.indexOf("0"), 10);
 
 //Generating random password
-function genRandomPswd() {
+const genRandomPswd = () => {
     let num = Math.floor(Math.random() * characters.length);
     let nN = Math.floor(Math.random() * noNum.length);
     if (incn.checked === false) {
